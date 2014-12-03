@@ -8,3 +8,64 @@
             margin: 20px;
         }
 
+ HTML{/*Sätter bakgrundsfärg*/
+    background-color:#C6e2FF;
+}
+
+.nav {/*NavigationsProperties*/
+    margin: 20px;
+    height: 40px;
+    width:525px;
+    background: #0094ff;
+}
+
+.nav ul {/*Unorganised list margin + padding*/
+
+    margin:0;
+    padding:0;
+
+}/*Ifall vi vill göra något med List element*/
+
+.nav ul li {
+
+    list-style: none;
+
+}
+
+.nav ul li a {/*Tagit bort decoration på länkar så att det är snyggare. Gjort så att det flyter från höger till vänster. (Float left), svart text på*/
+
+    text-decoration: none;
+    float: left;
+    display:block;
+    padding:10px 20px;
+    color: black;
+}
+/*När man drar musen över, kan lägga till mer funktionalitet*/
+.nav ul li a:hover{
+    background-color:#C6e2FF;
+}
+/*´? ?? */
+.headerbreak{
+    width:100%;
+    height:0;
+    border-bottom: 2px solid #0094ff;
+}
+
+/*Pingvin + Innehållande div's text font + storlek samt border.*/
+.penguin{
+    background-image:url(http://stuffpoint.com/penguins-lovers/image/104111-penguins-lovers-flying-penguin.jpg);
+    border: 5px;
+  /*border-style:groove; */  
+    width:1600px;
+    height:1000px;
+    font-family:Arial;
+    font-size:4em;
+
+
+}
+
+/*Footer ID*/
+#footer{
+    color: black;
+    font-size:1em;
+}
