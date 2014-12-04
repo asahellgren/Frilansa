@@ -36,10 +36,10 @@ namespace frilansa
             return base.OnDisconnected();
         }
 
-        public void ActiveUsers(string name)
-        {
-            nameList.Add(name);
-             Clients.All.allUsers(nameList);
-        }
+        //public void ActiveUsers(string name)
+        //{
+        //    nameList.Add(name);
+        //     Clients.All.allUsers(nameList);
+        //}
     }
 }

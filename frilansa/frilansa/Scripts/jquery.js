@@ -8,15 +8,14 @@
         $("#hitCountValue").text(hitCount);
     };
 
-    hub.client.allUsers = function (nameList) {
-        var encodedName;
-        $.each(nameList, function (index, value) {
-            encodedName = $('<div />').text(value).html();
-            $('#chatUsers').append('<li>' + encodedName
-                + '</li>');
-        });
-
-    }
+    //hub.client.allUsers = function (nameList) {
+    //    var encodedName;
+    //    $.each(nameList, function (index, value) {
+    //        encodedName = $('<div />').text(value).html();
+    //        $('#chatUsers').append('<li>' + encodedName
+    //            + '</li>');
+    //    });
+    //}
 
     hub.client.broadcastMessage = function (name, message) {
         var encodedName = $('<div />').text(name).html();
@@ -38,7 +37,7 @@
     $.connection.hub.start().done(function () {
         hub.server.recordHit();
 
-        hub.server.activeUsers($('#displayname').val());
+        //hub.server.activeUsers($('#displayname').val());
 
         $('#sendmessage').click(function () {
             hub.server.chatMessage($('#displayname').val(), $('#message').val());
@@ -46,31 +45,9 @@
             // Clear text box and reset focus for next comment.
             $('#message').val('').focus();
         });
-
-
-
     });
 
+    //Här slutar koden för chatten
 
-
-
-    //var chat = $.connection.chatHub;
-    // Create a function that the hub can call to broadcast messages.
-    //chat.client.broadcastMessage = function (name, message) {
-    // Html encode display name and message.
-    //var encodedName = $('<div />').text(name).html();
-    //var encodedMsg = $('<div />').text(message).html();
-    // Add the message to the page.
-    //$('#discussion').append('<li><strong>' + encodedName
-    //  + '</strong>:&nbsp;&nbsp;' + encodedMsg + '</li>');
-    //};
-
-    //chat.client.broadcastUsers = function(name) {
-    //  var encodedActiveName = $('<div />').text(name).html();
-    // $('#displayname').append(encodedActiveName + '<br/>');
-    //};
-    // Get the user name and store it to prepend to messages.
-
-
-
+   //Här kan vi skriva ny jqyery kod
 });
