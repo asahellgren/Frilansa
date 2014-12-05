@@ -1,72 +1,162 @@
-﻿body {
+﻿html {
+    font-family: 'raleway', Arial, "Helvetica";
+    color: black;
+    margin: 0px;
+    /*height: 100%;*/
 }
 
- .container {
-            background-color: white;
-            border: 1px solid #808080;
-            padding: 20px;
-            margin: 20px;
-     width: 50%;
+body {
+    background-color: white;
+    height: 100%;
+    max-width: 100%;
+    margin: 0px;
+}
+
+    body > #container {
+        height: auto;
+        min-height: 100%;
+    }
+
+#container {
+    height: 100%;
+    position: relative;
+}
+
+#content {
+
+    padding-bottom: 3em;
+}
+
+h1 {
+    color: black;
+    font-family: 'raleway';
+    font-size: 1.5em;
+    padding-top: 1em;
+}
+
+p {
+    line-height: 160%;
+}
+
+#logo {
+    font-family: raleway;
+    font-size: 4.5em;
+    color: black;
+    margin-top: 0.3em;
+}
+
+#logo2 {
+    font-family: 'raleway';
+    font-size: 1.1em;
+    color: black;
+    position: relative;
+    top: -0.9em;
+    padding-bottom: 0.3em;
+
+}
+
+#nav { /*Navigationsmeny*/
+    font-family: 'raleway';
+    font-size: 1em;
+    background-color: white;
+    border-bottom: 1px black solid;
+    border-top: 1px black solid;
+    color: black;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+    #nav a {
+        color: black;
+        padding: 0.5em 1.5em 0.5em;
+        text-decoration: none;
+    }
+
+        #nav a:hover {
+            background-color: gainsboro;
+            color: white;
         }
 
- HTML{/*Sätter bakgrundsfärg*/
-    background-color:#C6e2FF;
+
+
+
+@font-face {
+    font-family: 'raleway';
+    src: url('Raleway-Light.ttf') format('truetype');
 }
 
-.nav {/*NavigationsProperties*/
-    margin: 20px;
-    height: 40px;
-    width:525px;
-    background: #0094ff;
+#textpart1 {
+    background-color: gainsboro;
+    width: 100%;
+    height: 20em;
+    padding-top: 2em;
+    padding-bottom: 4em;
 }
 
-.nav ul {/*Unorganised list margin + padding*/
-
-    margin:0;
-    padding:0;
-
-}/*Ifall vi vill göra något med List element*/
-
-.nav ul li {
-
-    list-style: none;
-
+#textpart1 p {
+    width: 50%;
 }
 
-.nav ul li a {/*Tagit bort decoration på länkar så att det är snyggare. Gjort så att det flyter från höger till vänster. (Float left), svart text på*/
+#textpart2 {
+    background-color: white;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 2em;
+   
+}
 
-    text-decoration: none;
+
+#news1, #news2, #news3 {
     float: left;
-    display:block;
-    padding:10px 20px;
-    color: black;
-}
-/*När man drar musen över, kan lägga till mer funktionalitet*/
-.nav ul li a:hover{
-    background-color:#C6e2FF;
-}
-/*´? ?? */
-.headerbreak{
-    width:100%;
-    height:0;
-    border-bottom: 2px solid #0094ff;
+    width: 23%;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    margin-bottom: 2em;
+    padding-bottom: 2em;
 }
 
-/*Pingvin + Innehållande div's text font + storlek samt border.*/
-.penguin{
-    background-image:url(http://stuffpoint.com/penguins-lovers/image/104111-penguins-lovers-flying-penguin.jpg);
-    border: 5px;
-  /*border-style:groove; */  
-    width:1600px;
-    height:1000px;
-    font-family:Arial;
-    font-size:4em;
-
-
+.image {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    top: 0.5em;
 }
 
-/*Footer ID*/
-#footer{
-    color: black;
-    font-size:1em;
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.greyBackground {
+    background-color: gainsboro;
+}
+
+/*Footer*/
+#footer {
+    clear: left;
+    z-index: 1;
+    height: 10em;
+    margin-top: -3em;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+#footer img {
+    padding: 1em;
 }
