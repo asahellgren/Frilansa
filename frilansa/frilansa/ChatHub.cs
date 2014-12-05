@@ -7,39 +7,50 @@ using Microsoft.AspNet.SignalR;
 
 namespace frilansa
 {
- public class ChatHub : Hub
+    public class ChatHub : Hub
     {
 
-        static int _hitCount = 0;
-        static List<String> nameList = new List<string>(); 
+
+        static List<User> users = new List<User>();
 
         public void ChatMessage(string name, string message)
         {
             // Call the broadcastMessage method to update clients.
             Clients.All.broadcastMessage(name, message);
+            Clients.
         }
 
         public void RecordHit()
         {
-            _hitCount += 1;
-            Clients.All.onRecordHit(_hitCount); 
+            Clients.All.onRecordHit(users.Count);
             //Javascriptet går in i metoden RecordHit när man startar upp connection, 
             //den plussar på hitcount och skickar sedan tillbaka hitcount till alla klienter via onRecordHit (2).
-
         }
 
         public override Task OnDisconnected()
         {
-          
-            _hitCount -= 1;
-            Clients.All.onRecordHit(_hitCount);
+            foreach (User u in users.ToList())
+            {
+                if (u.Id == Context.ConnectionId)
+                {
+                    users.Remove(u);
+                }
+            }
+
+            Clients.All.allUsers(users);
+            Clients.All.onRecordHit(users.Count);
+
             return base.OnDisconnected();
         }
 
-        //public void ActiveUsers(string name)
-        //{
-        //    nameList.Add(name);
-        //     Clients.All.allUsers(nameList);
-        //}
+        public void ActiveUsers(string name)
+        {
+            var user = new User();
+            user.Id = Context.ConnectionId;
+            user.Name = name;
+            users.Add(user);
+            Clients.All.allUsers(users);
+
+        }
     }
 }

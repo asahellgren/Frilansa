@@ -8,14 +8,16 @@
         $("#hitCountValue").text(hitCount);
     };
 
-    //hub.client.allUsers = function (nameList) {
-    //    var encodedName;
-    //    $.each(nameList, function (index, value) {
-    //        encodedName = $('<div />').text(value).html();
-    //        $('#chatUsers').append('<li>' + encodedName
-    //            + '</li>');
-    //    });
-    //}
+    hub.client.allUsers = function (users) {
+        var encodedName;
+        $('#chatUsers').html("");
+        $.each(users, function (index, value) {
+            encodedName = value.Name;
+
+            $('#chatUsers').append('<li>' + encodedName
+                + '</li>');
+        });
+    }
 
     hub.client.broadcastMessage = function (name, message) {
         var encodedName = $('<div />').text(name).html();
@@ -37,7 +39,7 @@
     $.connection.hub.start().done(function () {
         hub.server.recordHit();
 
-        //hub.server.activeUsers($('#displayname').val());
+        hub.server.activeUsers($('#displayname').val());
 
         $('#sendmessage').click(function () {
             hub.server.chatMessage($('#displayname').val(), $('#message').val());

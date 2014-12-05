@@ -18,12 +18,16 @@
             <div id="logo" class="center">FRILANSA</div>
             <div id="logo2" class="center">DEN SNABBA VÄGEN TILL NYA UPPDRAG</div>
             <div id="nav">
-                <a href="index.aspx">HEM</a>
-                <a href="index.aspx#aboutus">VILKA ÄR VI?</a>
-                <a href="index.aspx#news">NYHETER</a>
-                <a href="chat.aspx">CHATT</a>
-                <a href="forum.aspx">FORUM</a>
-                <a href="contact.aspx">KONTAKTA OSS</a>
+                <div id="nav2">
+                    <ul>
+                        <li><a href="index.aspx">HEM</a></li>
+                        <li><a href="index.aspx#aboutus">VILKA ÄR VI?</a></li>
+                        <li><a href="index.aspx#news">NYHETER</a></li>
+                        <li><a href="chat.aspx">CHATT</a></li>
+                        <li><a href="forum.aspx">FORUM</a></li>
+                        <li><a href="contact.aspx">KONTAKTA OSS</a></li>
+                    </ul>
+                </div>
             </div>
 
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
@@ -32,7 +36,7 @@
     </form>
     <div id="footer">
         <p>Frilansa.nu | Storgatan 1, 12933 Hägersten | 08-123 456</p>
-        <img src="Images/facebook.jpg"/><img src="Images/twitter.jpg"/><img src="Images/you_tube.jpg"/><img src="Images/linkedin.jpg"/>
+        <img src="Images/facebook.jpg" /><img src="Images/twitter.jpg" /><img src="Images/you_tube.jpg" /><img src="Images/linkedin.jpg" />
     </div>
 </body>
 </html>

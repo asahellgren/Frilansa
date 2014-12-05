@@ -5,7 +5,7 @@
      <div id="content">    
         <p>Antal uppkopplade: </p><div id="hitCountValue">0</div>
         <div id="displayname"></div><br/>
-<%--        <ul id="chatUsers"></ul><br/>--%>
+        <ul id="chatUsers"></ul><br/>
         <input type="text" id="message" />
         <input type="button" id="sendmessage" value="Send" />
         
