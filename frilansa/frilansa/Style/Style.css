@@ -20,10 +20,10 @@ body {
 #container {
     height: 100%;
     position: relative;
+    padding-bottom: 3em;
 }
 
 #content {
-    padding-bottom: 3em;
 }
 
 h1 {
@@ -166,6 +166,8 @@ p {
 /*Footer*/
 #footer {
     clear: left;
+    position: relative;
+    width: 100%;
     z-index: 1;
     height: 10em;
     margin-top: -3em;
