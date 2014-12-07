@@ -79,10 +79,25 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\dribble.jpg" />
+    <Content Include="Images\facebook.jpg" />
+    <Content Include="Images\flickr.jpg" />
+    <Content Include="Images\jobs2.jpg" />
+    <Content Include="Images\linkedin.jpg" />
+    <Content Include="Images\twitter.jpg" />
+    <Content Include="Images\you_tube.jpg" />
     <Content Include="master.Master" />
+    <Content Include="Images\news3.jpg" />
+    <Content Include="Images\newsevents.jpg" />
     <Content Include="packages.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="chat.aspx" />
+    <Content Include="index.aspx" />
+    <Content Include="Style\upper_east_side.ttf" />
+    <Content Include="Style\BonvenoCF-Light.otf" />
+    <Content Include="Style\black_jack.ttf" />
+    <Content Include="Style\ostrich.ttf" />
+    <Content Include="Style\Raleway-Light.ttf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -118,6 +133,14 @@
     <Compile Include="chat.aspx.designer.cs">
       <DependentUpon>chat.aspx</DependentUpon>
     </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
