@@ -84,6 +84,7 @@
     <Content Include="Images\flickr.jpg" />
     <Content Include="Images\jobs2.jpg" />
     <Content Include="Images\linkedin.jpg" />
+    <Content Include="Images\people.jpg" />
     <Content Include="Images\twitter.jpg" />
     <Content Include="Images\you_tube.jpg" />
     <Content Include="master.Master" />
