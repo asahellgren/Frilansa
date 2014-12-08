@@ -17,9 +17,8 @@
         <div id="container">
             <div id="logo" class="center">FRILANSA</div>
             <div id="logo2" class="center">DEN SNABBA VÄGEN TILL NYA UPPDRAG</div>
-            <div id="nav">
-                <div id="nav2">
-                    <ul>
+            <div id="nav"> <!--Fick koda om hela strukturen nästan ^.^-->
+                    <ul id="NavList">
                         <li><a href="index.aspx">HEM</a></li>
                         <li><a href="index.aspx#aboutus">VILKA ÄR VI?</a></li>
                         <li><a href="index.aspx#news">NYHETER</a></li>
