@@ -36,7 +36,23 @@
     </form>
     <div id="footer">
         <p>Frilansa.nu | Storgatan 1, 12933 Hägersten | 08-123 456</p>
-        <img src="Images/facebook.jpg" /><img src="Images/twitter.jpg" /><img src="Images/you_tube.jpg" /><img src="Images/linkedin.jpg" />
-    </div>
+        
+        <a class="FooterLink" href="http://www.facebook.com">
+        <img src="Images/facebook.jpg" />
+        </a>
+
+        <a class="FooterLink" href="http://www.twitter.com">
+        <img src="Images/twitter.jpg" />
+        </a>
+        
+        <a class="FooterLink" href="http://www.youtube.com">
+        <img src="Images/you_tube.jpg" />
+        </a>
+
+        <a class="FooterLink" href="http://www.linkedin.com">
+        <img src="Images/linkedin.jpg" />
+        </a>
+
+         </div>
 </body>
 </html>
