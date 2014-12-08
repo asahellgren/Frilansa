@@ -16,7 +16,8 @@ namespace frilansa
         public void ChatMessage(string name, string message)
         {
             // Call the broadcastMessage method to update clients.
-            Clients.All.broadcastMessage(name, message);
+            Clients.Caller.broadcastMessageCaller(name, message);
+            Clients.Others.broadcastMessageOthers(name, message);
         }
 
         public void RecordHit()
