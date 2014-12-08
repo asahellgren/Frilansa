@@ -7,13 +7,13 @@
 
     hub.client.allUsers = function(users) {
         var encodedName;
-        $('#hitCountValue').hover.
-            $('#chatUsers').html("");
+            $('#namesOfActiveUsers').html("");
         $.each(users, function(index, value) {
             encodedName = value.Name;
-
-            $('#chatUsers').append(encodedName
+           
+            $('#namesOfActiveUsers').append(encodedName
                 + '<br />');
+         
         });
     };
 

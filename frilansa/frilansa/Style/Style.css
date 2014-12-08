@@ -19,8 +19,8 @@ body {
 
 #container {
     height: 100%;
-/*    position: relative; */
-    padding-bottom: 3em;
+    /*    position: relative; */
+    padding-bottom: 5em;
 }
 
 #content {
@@ -49,32 +49,30 @@ p {
     font-family: 'raleway';
     font-size: 1.1em;
     color: black;
-    
     top: -0.9em;
     padding-bottom: 0.3em;
 }
 
 #nav {
- /*   position: relative; */
-    
+    /*   position: relative; */
     width: auto;
     height: auto;
     border-top: 1px black solid;
     border-bottom: 1px black solid;
-    text-align:center;
-    margin-left:auto;
-    margin-right:auto;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#NavList{
+#NavList {
     font-size: 1em;
-    margin-left:auto;
-    margin-right:auto;
+    margin-left: auto;
+    margin-right: auto;
     word-spacing: 0.1em;
     text-transform: uppercase;
-    width:auto;
-    height:auto;
-    text-align: inherit; 
+    width: auto;
+    height: auto;
+    text-align: inherit;
     padding-top: 1em;
     padding-right: 5em;
     padding-bottom: 1em;
@@ -102,9 +100,8 @@ div#nav li {
     font-size: 1em;
     background-color: white;
     color: black;
-    text-align:inherit;
+    text-align: inherit;
     text-transform: uppercase;
-
 }
 
 #nav a:link, a:visited {
@@ -164,13 +161,13 @@ div#nav li {
     clear: left;
     margin-left: auto;
     margin-right: auto;
-   /* max-width: 100%; */
+    /* max-width: 100%; */
     height: auto;
     width: auto;
     overflow: hidden;
     position: relative;
     top: 0.5em;
-    text-align:center;
+    text-align: center;
 }
 
 .center {
@@ -185,7 +182,7 @@ div#nav li {
 
 /*Footer*/
 #footer {
-    clear: left;
+    clear: both;
     position: relative;
     width: 100%;
     z-index: 1;
@@ -201,3 +198,84 @@ div#nav li {
     #footer img {
         padding: 1em;
     }
+
+/*CHATTSIDAN*/
+#chatContainer { /*container for chat*/
+    position: relative;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+    text-align: center;
+    border-top: 1px dotted;
+}
+
+.caller { /*Chattmeddelande-style för den som skickar meddelandet*/
+    background-color: lightcoral;
+    border-radius: 1em;
+    padding: 0.3em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    -moz-border-radius: 1em;
+    -webkit-border-radius: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.others { /*chattmeddelande-style för alla utom den som skickar*/
+    background-color: lightblue;
+    border-radius: 1em;
+    padding: 0.3em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    -moz-border-radius: 1em;
+    -webkit-border-radius: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#namesOfActiveUsers { /*Chatten - högra sidan, visar vilka användare som är online just nu*/
+    float: right;
+    padding: 0.5em;
+    border-left: 1px dotted black;
+    width: auto;
+}
+
+#numberOfUsers { /*Visar hur många användare som är online*/
+    display: none;
+}
+
+#chat { /*Chatten - vänstra sidan*/
+    float: left;
+    text-align: left;
+    padding: 0.5em;
+    max-width: 60%;
+}
+
+#endChat { /*Slut på chatten, clearar floats och sätter lite marginal ner till footern.*/
+    clear: both;
+    margin-bottom: 10em;
+}
+
+
+@media (max-width: 900px ) { /*Inställningar för chatten för mindre enheter, tex mobil*/
+    #container {
+        width: 100%;
+    }
+
+    #chatContainer {
+        width: 90%;
+        border: none;
+    }
+
+    #namesOfActiveUsers {
+        display: none;
+    }
+
+    #numberOfUsers {
+        display: block;
+    }
+}
