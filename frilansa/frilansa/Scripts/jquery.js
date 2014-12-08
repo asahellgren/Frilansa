@@ -4,9 +4,7 @@
 
     //här tar klienten emot metoden onrecordhit från servern tillsammans med värdet i hitcount och skriver ut det 
     //till vår html. Detta är vår eventhandler kan man säga. (3)
-    hub.client.onRecordHit = function (hitCount) {
-        $("#hitCountValue").text(hitCount);
-    };
+  
 
     hub.client.allUsers = function (users) {
         var encodedName;
@@ -18,6 +16,10 @@
                 + '</li>');
         });
     }
+
+    hub.client.onRecordHit = function (hitCount) {
+        $("#hitCountValue").text(hitCount);
+    };
 
     hub.client.broadcastMessage = function (name, message) {
         var encodedName = $('<div />').text(name).html();
@@ -37,9 +39,10 @@
 
     //här drar vi igång uppkopplingen och ropar på metoderna i back-end. (1)
     $.connection.hub.start().done(function () {
-        hub.server.recordHit();
-
+        
         hub.server.activeUsers($('#displayname').val());
+
+        hub.server.recordHit();
 
         $('#sendmessage').click(function () {
             hub.server.chatMessage($('#displayname').val(), $('#message').val());
