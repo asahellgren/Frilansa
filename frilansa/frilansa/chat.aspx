@@ -4,9 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div id="content">
-        <div class="image">
-            <img src="Images/people.jpg" />
-        </div>
+        <img src="Images/people.jpg" class="img-responsive center" />
         <h1 class="center">Live chatt</h1>
         <div id="chatContainer">
             <div id="chat" class="form-group">
