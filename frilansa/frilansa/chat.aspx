@@ -9,15 +9,15 @@
         </div>
         <h1 class="center">Live chatt</h1>
         <div id="chatContainer">
-            <div id="chat">
+            <div id="chat" class="form-group">
                 <div id="displayname"></div>
                 <div id="numberOfUsers">
                     <span>Inloggade: </span>
                     <span id="hitCountValue">0</span>
                     <span>användare</span><br />
                 </div>
-                <input type="text" id="message" />
-                <input type="button" id="sendmessage" value="Skicka" /><br />
+                <input type="text" class="form-control" id="message" placeholder="Skriv meddelande här" />
+                <input type="button" class="btn btn-default" id="sendmessage" value="Skicka" /><br />
                 <div id="chatMessages"></div>
             </div>
             <div id="namesOfActiveUsers"></div>

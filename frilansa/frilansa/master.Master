@@ -9,22 +9,27 @@
     <meta name="keywords" content="jobba,frilansa,media," />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="Style/Style.css" />
+    <link href="Style/bootstrap.css" rel="stylesheet" />
+    <script src="Scripts/bootstrap.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <form id="form1" runat="server">
-        <div id="container">
+    <form id="form1" runat="server" role="form">
+        <div class="container-fluid">
             <div id="logo" class="center">FRILANSA</div>
             <div id="logo2" class="center">DEN SNABBA VÄGEN TILL NYA UPPDRAG</div>
+            <nav class="navbar navbar-default" role="navigation"></nav>
+            
             <div id="nav"> <!--Fick koda om hela strukturen nästan ^.^-->
                     <ul id="NavList">
-                        <li><a href="index.aspx">HEM</a></li>
-                        <li><a href="index.aspx#aboutus">VILKA ÄR VI?</a></li>
-                        <li><a href="index.aspx#news">NYHETER</a></li>
-                        <li><a href="chat.aspx">CHATT</a></li>
-                        <li><a href="forum.aspx">FORUM</a></li>
-                        <li><a href="index.aspx#contact">KONTAKTA OSS</a></li>
+                        <li><a href="index.aspx">Hem</a></li>
+                        <li><a href="index.aspx#aboutus">Vilka är vi?</a></li>
+                        <li><a href="index.aspx#news">Nyheter</a></li>
+                        <li><a href="chat.aspx">Chatt</a></li>
+                        <li><a href="forum.aspx">Forum</a></li>
+                        <li><a href="index.aspx#contact">Kontakta oss</a></li>
                     </ul>
                 </div>
             </div>

@@ -90,15 +90,15 @@
     <Content Include="master.Master" />
     <Content Include="Images\news3.jpg" />
     <Content Include="Images\newsevents.jpg" />
-    <Content Include="packages.config" />
+    <Content Include="Style\bootstrap.css" />
+    <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="chat.aspx" />
     <Content Include="index.aspx" />
-    <Content Include="Style\upper_east_side.ttf" />
-    <Content Include="Style\BonvenoCF-Light.otf" />
-    <Content Include="Style\black_jack.ttf" />
-    <Content Include="Style\ostrich.ttf" />
     <Content Include="Style\Raleway-Light.ttf" />
+    <None Include=".bin\bower.cmd" />
+    <None Include=".bin\git.cmd" />
+    <None Include=".bin\node.cmd" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
