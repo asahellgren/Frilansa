@@ -24,7 +24,7 @@
                         <li><a href="index.aspx#news">NYHETER</a></li>
                         <li><a href="chat.aspx">CHATT</a></li>
                         <li><a href="forum.aspx">FORUM</a></li>
-                        <li><a href="contact.aspx">KONTAKTA OSS</a></li>
+                        <li><a href="index.aspx#contact">KONTAKTA OSS</a></li>
                     </ul>
                 </div>
             </div>

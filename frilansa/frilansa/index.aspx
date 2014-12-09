@@ -28,13 +28,22 @@
             <img src="Images/newsevents.jpg" />
         </div>
         <div id="textpart2">
-            <h1 class="center">SENASTE BRANSCHNYHETERNA</h1>
+            <h1 class="center">Senaste Branschnyheterna</h1>
             <div id="news1"><b>FOTOMÄSSA 25/1 2015</b><p>Missa inte fotomässan på Älvsjömässan den 25/1 2015. Där kommer finnas mer än 30 uställare blanda annat Canon och Panasonic</p>
             </div>
             <div id="news2"><b>ÖPPET HUS PÅ SVT</b><p>Nu är det snart dags för SVT:s årliga öppet hus-dag. Det kommer bjudas på kaffe och bullar. Läs mer om arrangemanget här.</p>
             </div>
             <div id="news3"><b>FRILANSARE POPULÄRT 2014</b><p>Det har blivit populärt att jobba som frilansare. Allt fler väljer denna anställningsform av olika anledningar. Läs mer om SIFO:s undersökning här.</p>
             </div>
+
+        </div>
+        <div class="image">
+            <a id="contact"></a>
+            <img src="Images/newsevents.jpg" />
+        </div>
+        <div id="textpart3"> <!--SKRIV KONTAKTFORMULÄR NEDAN-->
+            <h1 class="center">Kontaktformulär</h1>
+            <p>Name: </p><input type="text" id="name"/>
         </div>
     </div>
 
