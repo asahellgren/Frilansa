@@ -2,8 +2,8 @@
     position: relative;
     font-family: 'raleway', Arial, "Helvetica";
     color: black;
-    margin: 0px;
-    min-height: 100%;
+    margin: 0;
+    height: 100%;
 }
 
 body {
@@ -15,42 +15,41 @@ body {
     margin-top: 0;
     padding-top: 6em;
     padding-bottom: 15em;
+    min-height: 100%;
 }
-
 
 .wrapper {
     padding: 0;
     margin: 0;
+    min-height: 100%;
 }
 
 .navbar-default {
     background-color: white;
 }
-
-
-#content {
-}
-
+    
 .footer {
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     width: 100%;
     height: 15em;
-    background-color: black;
+    background-color: #333;
     text-align: center;
+
     color: white;
     padding-top: 3em;
 }
 
-.footer a {
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-}
+    .footer a {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
 
 h1 {
     color: black;
     font-family: 'raleway';
     text-transform: uppercase;
+    font-size: 2em;
 }
 
 p {
@@ -75,7 +74,6 @@ p {
     padding-bottom: 0.3em;
 }
 
-
 .navbar-nav > li {
     padding-top: 2.4em;
     padding-left: 0.5em;
@@ -91,95 +89,28 @@ p {
 }
 
 .navbar-right {
-    padding-top: 1.5em; 
+    padding-top: 1.5em;
 }
 
-#nav {
-    width: auto;
-    height: auto;
-    border-top: 1px black solid;
-    border-bottom: 1px black solid;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
 
-#NavList {
-    font-size: 1em;
-    margin-left: auto;
-    margin-right: auto;
-    word-spacing: 0.1em;
-    text-transform: uppercase;
-    width: auto;
-    height: auto;
-    text-align: inherit;
-    padding-top: 1em;
-    padding-right: 5em;
-    padding-bottom: 1em;
-    padding-left: 7.5em;
-}
-
-/*#nav ul {
-   /* position: relative; 
-    list-style-type: none;
-    background-color: red;
-    text-align: inherit; 
-    margin:initial;
-    padding:initial; 
-    width: +20%; 
-    margin-left:auto;
-    margin-right:auto;
-    word-spacing: 300px;
-} */
-
-#newNav {
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-div#nav li {
-    width: 15%;
-    display: inline;
-    float: left;
-    font-family: 'raleway';
-    font-size: 1em;
-    background-color: white;
-    color: black;
-    text-align: inherit;
-    text-transform: uppercase;
-}
-
-#nav a:link, a:visited {
-    color: black;
-    text-decoration: none;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    text-transform: uppercase;
-}
-
-#nav li a:hover, a:active {
-    background-color: gainsboro;
-    color: white;
-}
 
 @font-face {
     font-family: 'raleway';
     src: url('Raleway-Light.ttf') format('truetype');
 }
 
-#textpart1 { /*Om oss - index.aspx*/
+#aboutus { /*Om oss - index.aspx*/
     background-color: gainsboro;
     width: 100%;
     padding-top: 2em;
     padding-bottom: 4em;
 }
 
- #textpart1 p {
+    #aboutus p {
         width: 50%;
     }
 
-#textpart2 { /*Nyheter - index.aspx*/
+#news { /*Nyheter - index.aspx*/
     background-color: white;
     width: 75%;
     margin-left: auto;
@@ -189,7 +120,7 @@ div#nav li {
     padding-bottom: 4em;
 }
 
-#textpart3 { /*Kontaktformulär - index.aspx*/
+#contact { /*Kontaktformulär - index.aspx*/
     background-color: white;
     width: 75%;
     margin-left: auto;
@@ -226,28 +157,31 @@ div#nav li {
     padding-bottom: 2em;
     text-align: center;
     border-top: 1px dotted;
+    word-wrap: break-word;
 }
 
 .caller { /*Chattmeddelande-style för den som skickar meddelandet*/
-    background-color: lightcoral;
-    border-radius: 1em;
+    background-color: pink;
     padding: 0.3em;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
+    -ms-border-radius: 1em;
     -moz-border-radius: 1em;
     -webkit-border-radius: 1em;
+    border-radius: 1em;
     margin-left: auto;
     margin-right: auto;
 }
 
 .others { /*chattmeddelande-style för alla utom den som skickar*/
-    background-color: lightblue;
-    border-radius: 1em;
+    background-color: gainsboro;
     padding: 0.3em;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
+    -ms-border-radius: 1em;
     -moz-border-radius: 1em;
     -webkit-border-radius: 1em;
+    border-radius: 1em;
     margin-left: auto;
     margin-right: auto;
 }
@@ -270,11 +204,10 @@ div#nav li {
     max-width: 60%;
 }
 
-#endChat { /*Slut på chatten, clearar floats och sätter lite marginal ner till footern.*/
+#endChat { /*Slut på chatten, clearar floats och sätter lite padding ner till footern.*/
     clear: both;
-    margin-bottom: 10em;
+    padding-bottom: 10em;
 }
-
 
 @media (max-width: 768px ) { /*Inställningar för små enheter, tex mobil*/
     #container {
@@ -282,7 +215,12 @@ div#nav li {
     }
 
     #chatContainer {
-        width: 90%;
+        width: 100%;
+        border: none;
+    }
+
+    #chat {
+        width: 100%;
         border: none;
     }
 
@@ -294,3 +232,93 @@ div#nav li {
         display: block;
     }
 }
+
+@media (max-width: 980px) {
+  .nav li {
+        font-size: 70%;
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 870px) {
+    .navbar-nav > li {
+    padding-top: 0;
+    padding-left: 0;
+    font-family: 'raleway';
+    font-size: 100%
+    }
+}
+
+#maps {
+    width: 100%;
+    height: 100%;
+}
+
+/*#nav {
+    width: auto;
+    height: auto;
+    border-top: 1px black solid;
+    border-bottom: 1px black solid;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}*/
+
+/*#NavList {
+    font-size: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    word-spacing: 0.1em;
+    text-transform: uppercase;
+    width: auto;
+    height: auto;
+    text-align: inherit;
+    padding-top: 1em;
+    padding-right: 5em;
+    padding-bottom: 1em;
+    padding-left: 7.5em;
+}*/
+
+/*#nav ul {
+   /* position: relative; 
+    list-style-type: none;
+    background-color: red;
+    text-align: inherit; 
+    margin:initial;
+    padding:initial; 
+    width: +20%; 
+    margin-left:auto;
+    margin-right:auto;
+    word-spacing: 300px;
+} */
+
+/*#newNav {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}*/
+
+/*div#nav li {
+    width: 15%;
+    display: inline;
+    float: left;
+    font-family: 'raleway';
+    font-size: 1em;
+    background-color: white;
+    color: black;
+    text-align: inherit;
+    text-transform: uppercase;
+}*/
+
+/*#nav a:link, a:visited {
+    color: black;
+    text-decoration: none;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    text-transform: uppercase;
+}*/
+
+/*#nav li a:hover, a:active {
+    background-color: gainsboro;
+    color: white;
+}*/
