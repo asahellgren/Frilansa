@@ -67,7 +67,7 @@
         <!--KontaktUppgifter-->
 
         <p>Telefon Nummer</p>
-        <input type="text" style name="telefon" /> 
+        <input type="text" name="telefon" /> 
 
        
 
