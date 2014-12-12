@@ -73,6 +73,7 @@
 
                 <p>Telefon Nummer</p>
                 <input type="text" name="telefon" />
+                <p>Email:</p><input type="email" id="tbEmail"/>
 
 
 
