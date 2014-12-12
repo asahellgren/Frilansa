@@ -87,7 +87,6 @@
     <Content Include="Images\people.jpg" />
     <Content Include="Images\twitter.jpg" />
     <Content Include="Images\you_tube.jpg" />
-    <Content Include="index.html" />
     <Content Include="master.Master" />
     <Content Include="Images\newsevents.jpg" />
     <Content Include="Scripts\JavaScript.js" />
@@ -127,7 +126,6 @@
     <Content Include="tipuesearch\tipuesearch.min.js" />
     <Content Include="tipuesearch\tipuesearch_content.js" />
     <Content Include="tipuesearch\tipuesearch_set.js" />
-    <Content Include="tipuesearch\urllist.txt" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
