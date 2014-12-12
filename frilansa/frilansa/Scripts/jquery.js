@@ -4,16 +4,16 @@
 
     //här tar klienten emot metoden onrecordhit från servern tillsammans med värdet i hitcount och skriver ut det 
     //till vår html. Detta är vår eventhandler kan man säga. (3)
-
+   
     hub.client.allUsers = function(users) {
+
         var encodedName;
             $('#namesOfActiveUsers').html("");
         $.each(users, function(index, value) {
             encodedName = value.Name;
            
             $('#namesOfActiveUsers').append(encodedName
-                + '<br />');
-         
+                + '<br />');        
         });
     };
 
@@ -23,20 +23,23 @@
 
     hub.client.broadcastMessageCaller = function (name, message) {
         var encodedMsg = $('<div />').text(message).html();
-        $('#chatMessages').append('<p class="caller"><strong>Jag:&nbsp;&nbsp;</strong>' + encodedMsg + '</p>');
+        $('#chatMessages').prepend('<p class="caller"><strong>Jag:&nbsp;&nbsp;</strong>' + encodedMsg + '</p>');
     };
 
     hub.client.broadcastMessageOthers = function (name, message) {
         var encodedName = $('<div />').text(name).html();
         var encodedMsg = $('<div />').text(message).html();
-        $('#chatMessages').append('<p class="others"><strong>' + encodedName
+        $('#chatMessages').prepend('<p class="others"><strong>' + encodedName
             + '</strong>:&nbsp;&nbsp;' + encodedMsg + '</p>');
     };
+
+    var d = new Date();
+    var time = d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate() + " " + d.getHours() + ":" + d.getMinutes();
 
     $('#displayname').val(prompt('Enter your name:', ''));
     //$.connection.hub.start().done(function() { 
     //  chat.server.send($('#displayname').val());
-    $('#displayname').append('Du är inloggad som: <strong>' + $('#displayname').val() + '</strong>');
+    $('#displayname').append('Du är inloggad som: <strong>' + $('#displayname').val() + '</strong>' + '<br/>Chattat sedan: ' + time);
     // Set initial focus to message input box.
     //});
     $('#message').focus();
@@ -58,6 +61,4 @@
     });
 
     //Här slutar koden för chatten
-
-   //Här kan vi skriva ny jqyery kod
 });
