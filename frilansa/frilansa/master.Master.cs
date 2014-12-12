@@ -13,5 +13,18 @@ namespace frilansa
         {
 
         }
+
+        protected void btnSearch_OnClick(object sender, EventArgs e)
+        {
+            //try
+            //{
+            //    var search = this.tbSearch.Text;
+            //    Response.Redirect("search_results.aspx?searchtext=" + search);
+            //}
+            //catch (Exception ex)
+            //{
+            //    Response.Write(ex.Message);
+            //}
+        }
     }
 }

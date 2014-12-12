@@ -98,6 +98,7 @@
     <Content Include="Style\Raleway-Light.ttf" />
     <Content Include="search_results.aspx" />
     <Content Include=".DS_Store" />
+    <Content Include="contact_form.aspx" />
     <None Include="Properties\PublishProfiles\asahellgren.pubxml" />
     <Content Include="Style\bootstrap.css.map" />
     <Content Include="tipuesearch\.DS_Store" />
@@ -160,6 +161,13 @@
     </Compile>
     <Compile Include="search_results.aspx.designer.cs">
       <DependentUpon>search_results.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contact_form.aspx.cs">
+      <DependentUpon>contact_form.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contact_form.aspx.designer.cs">
+      <DependentUpon>contact_form.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <PropertyGroup>
