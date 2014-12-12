@@ -46,11 +46,33 @@
         <div id="contact">
             <!--SKRIV KONTAKTFORMULÄR NEDAN-->
 
-           
-
+           <!--Vill att datat på formen ska skriva in datat på en specific URL-->
+    <div id="ContactForm">
             <h1 class="center">Kontakt</h1>
-            <p>Name: </p>
-            <input type="text" id="name" /><br/>    
+        
+        <!--För och Efternamn-->
+        
+        <p id="PForName">För och efternamn</p>
+        <input type="text" name="förnamn" />
+        <input type="text" name="efternamn" />
+        <br />
+        <p id="PForContact">Kontakt Uppgifter</p>
+        
+        <!--Kön-->
+
+        <input type="radio" name="kön" value="Man""/>Man
+        <br />
+        <input type="radio" name="kön" value="Kvinna"/>Kvinna
+
+        <!--KontaktUppgifter-->
+
+        <p>Telefon Nummer</p>
+        <input type="text" style name="telefon" /> 
+
+       
+
+    </div>
+   
             
              <%-- google api --%>
             <div id="maps">
