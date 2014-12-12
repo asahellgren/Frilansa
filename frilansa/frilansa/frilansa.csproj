@@ -96,6 +96,7 @@
     <Content Include="chat.aspx" />
     <Content Include="index.aspx" />
     <Content Include="Style\Raleway-Light.ttf" />
+    <Content Include="ContactForm.aspx" />
     <None Include=".bin\bower.cmd" />
     <None Include=".bin\git.cmd" />
     <None Include=".bin\node.cmd" />
@@ -142,6 +143,13 @@
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="User.cs" />
+    <Compile Include="ContactForm.aspx.cs">
+      <DependentUpon>ContactForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContactForm.aspx.designer.cs">
+      <DependentUpon>ContactForm.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
