@@ -11,15 +11,18 @@
             <p class="center">
                 Detta är platsen för dig som är frilansare inom mediabranschen. Vår vision är att skapa en gemensam portal för er inom denna yrkesgrupp.
            
+           
             </p>
             <p class="center">
                 Frilansa håller dig ständigt uppdaterad
             med de senaste branschnyheterna, du kan gå in på vår livechatt för att snacka med andra i branschen och det finns även möjlighet att diskutera olika ämnen i vårt forum.           
            
+           
             </p>
             <p class="center">
                 Inom kort kommer det finnas möjlighet att skapa en profil där du kan visa potentiella arbetsgivare vilken kompetens du har och när du är ledig
             för att ta uppdrag. Du kommer även att kunna köpa och sälja mediautrustning.           
+           
            
             </p>
         </div>
@@ -49,9 +52,9 @@
         <div id="contact">
             <h1 class="center">Kontakt</h1>
             <!--Vill att datat på formen ska skriva in datat på en specific URL-->
-            <div id="ContactForm">
-
-
+           
+             <div id="ContactForm">
+                
                 <!--För och Efternamn-->
 
                 <p id="PForName">För och efternamn</p>
@@ -64,22 +67,28 @@
 
                 <input type="radio" name="kön" value="Man" />Man
        
+               
+
                 <br />
                 <input type="radio" name="kön" value="Kvinna" />Kvinna
 
        
 
+               
+
+
+
                 <!--KontaktUppgifter-->
 
                 <p>Telefon Nummer</p>
                 <input type="text" name="telefon" />
-                <p>Email:</p><input type="email" id="tbEmail"/>
+                <p>Email:</p>
+                <input type="email" id="tbEmail" />
 
 
 
             </div>
-
-
+            
             <%-- google api --%>
             <div id="maps">
                 <iframe
