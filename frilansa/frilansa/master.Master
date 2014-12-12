@@ -38,7 +38,7 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <form id="form1" runat="server" role="form" action="search_results.aspx">
+    <form id="form1" runat="server" role="form" action="contact_form.aspx">
         <div class="wrapper">
             <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
                 <div class="container-fluid">
@@ -64,7 +64,9 @@
                         </ul>
                         <!--Sökrutan till höger i navigationsmenyn-->
                         <div class="navbar-form navbar-right">
+
                             <input type="text" name="q" class="form-control" id="tipue_search_input" autocomplete="off" required />
+
                             <button type="submit" class="btn btn-sm btn-default">Sök</button>
                         </div>
                     </div>
@@ -76,7 +78,7 @@
         </div>
     </form>
     <footer class="footer">
-        <h5>Frilansa | Storgatan 1, 12933 Hägersten | 08-123 456 | info@frilansa.nu </h5>
+        <h5>Frilansa | Trekantsvägen 3, 11743 Stockholm | 08-123 456 | info@frilansa.nu </h5>
         <br />
         <div>
             <a href="http://www.facebook.com">

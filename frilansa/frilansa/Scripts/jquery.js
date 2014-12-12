@@ -34,7 +34,12 @@
     };
 
     var d = new Date();
-    var time = d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate() + " " + d.getHours() + ":" + d.getMinutes();
+    var min = d.getMinutes();
+    if (d.getMinutes() < 10) {
+        min = "0" + d.getMinutes();
+    }
+
+    var time = d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate() + " " + d.getHours() + ":" + min;
 
     $('#displayname').val(prompt('Enter your name:', ''));
     //$.connection.hub.start().done(function() { 
